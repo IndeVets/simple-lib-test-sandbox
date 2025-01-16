@@ -1,10 +1,24 @@
 module.exports = function (api) {
-  api.cache(true);
+  api.cache(true)
   return {
-    presets: ['babel-preset-expo'],
+    presets: [
+      [
+        'module:metro-react-native-babel-preset',
+        {
+          useTransformReactJSXExperimental: true
+        }
+      ],
+      'babel-preset-expo'
+    ],
     plugins: [
-      // ['@tamagui/babel-plugin', { config: 'chameleon-ui/lib/tamagui.config.ts' }]
+      [
+        'module-resolver',
+        {
+          root: ['./'],
+          extensions: ['.ios.js', '.android.js', '.js', '.ts', '.tsx', '.json', '.cjs']
+        }
+      ],
       'react-native-reanimated/plugin'
     ]
-  };
-};
+  }
+}

@@ -1,17 +1,31 @@
 {
   "extends": "expo/tsconfig.base",
+  "include": [
+    "src/**/*.js",
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "__tests__/**/*-test.ts"
+  ],
   "compilerOptions": {
+    "module": "esnext",
+    "skipLibCheck": true,
     "strict": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./*"
+      "assets": [
+        "assets/*"
+      ],
+      "*": [
+        "src/*"
       ]
     }
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts"
-  ]
+  "jsx": "react",
+  "strict": true,
+  "noUnusedLocals": true,
+  "noUnusedParameters": true
 }
