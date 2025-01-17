@@ -13,6 +13,7 @@
     "module": "esnext",
     "skipLibCheck": true,
     "strict": true,
+    "allowJs": true,
     "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {
@@ -25,6 +26,7 @@
     }
   },
   "jsx": "react",
+  "allowJs": true,
   "strict": true,
   "noUnusedLocals": true,
   "noUnusedParameters": true

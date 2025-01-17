@@ -38,3 +38,7 @@ app-example
 
 android
 ios
+
+# yalc
+.yalc
+yalc.lock
