@@ -18,6 +18,13 @@ module.exports = function (api) {
           extensions: ['.ios.js', '.android.js', '.js', '.ts', '.tsx', '.json', '.cjs']
         }
       ],
+      // [
+      //   '@tamagui/babel-plugin',
+      //   {
+      //     components: ['tamagui', 'chameleon-ui'],
+      //     config: './node_modules/chameleon-ui/dist/lib/tamagui.config.js'
+      //   }
+      // ],
       'react-native-reanimated/plugin'
     ]
   }
