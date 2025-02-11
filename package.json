@@ -16,6 +16,11 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@babel/plugin-proposal-export-default-from": "^7.25.9",
+    "@babel/plugin-syntax-export-default-from": "^7.25.9",
+    "@babel/plugin-transform-flow-strip-types": "^7.26.5",
+    "@babel/plugin-transform-private-property-in-object": "^7.25.9",
+    "@babel/plugin-transform-runtime": "^7.26.8",
     "@babel/runtime": "^7.25.7",
     "@emotion/react": "11.13.3",
     "@emotion/styled": "11.13.0",
@@ -26,8 +31,7 @@
     "@expo/vector-icons": "~14.0.2",
     "@gorhom/bottom-sheet": "~4.6.4",
     "@hookform/resolvers": "~3.9.0",
-    "@indevets/chameleon-ui": "4.97.0",
-    "@indevets/chameleon-web": "4.97.0",
+    "@indevets/chameleon-ui": "4.114.0",
     "@invertase/react-native-apple-authentication": "^2.4.0",
     "@jest/globals": "^29.7.0",
     "@miblanchard/react-native-slider": "~2.6.0",
@@ -175,7 +179,7 @@
     "unist-util-visit-parents": "~6.0.1",
     "victory": "36.9.2",
     "victory-native": "36.9.2",
-    "yet-another-react-lightbox": "~3.21.4",
+    "yet-another-react-lightbox": "^3.21.7",
     "yup": "~1.4.0",
     "zod": "~3.23.8"
   },

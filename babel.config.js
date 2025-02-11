@@ -18,7 +18,14 @@ module.exports = function (api) {
           extensions: ['.ios.js', '.android.js', '.js', '.ts', '.tsx', '.json', '.cjs']
         }
       ],
-      'react-native-reanimated/plugin'
+       [
+        'babel-plugin-styled-components',
+        {
+          meaninglessFileNames: ['index', 'styles']
+        }
+      ],
+      '@babel/plugin-proposal-export-namespace-from',
+      'react-native-reanimated/plugin',
     ]
   }
 }
